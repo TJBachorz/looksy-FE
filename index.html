@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel='icon' href='eye.png' type='image/x-icon'/>
+    <title>Looksy</title>
+    <script defer src="app.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        model-viewer {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-card">
+            <h1 class="header"><a href="/">L👀ksy</a></h1>
+            <p class="welcome-user"></p>
+        </div>    
+        <div class="hamnav">
+            <div class="ham-menu">
+                <span id="bar1" class="bar"></span>
+                <span id="bar2" class="bar"></span>
+                <span id="bar3" class="bar"></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a class="home link" href="/">Home</a></li>
+                <li><a class="link">Community</a></li>
+                <li><a class="contact link" onclick="contactsOverlay()">Contact</a></li>
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+    </header>
+    <main>
+        <div class="overlay-container">         
+            <section id="contact-overlay">
+                    <img id="contacts-x-icon" src="X-icon.png" onclick="contactsOverlay()">
+                    <h3>T. J. Bachorz</h3>
+                    <div id="contacts">
+                        <a class="link" href="https://github.com/TJBachorz">Github</a>
+                        <a class="link" href="https://www.linkedin.com/in/tjbachorz/">LinkedIn</a>
+                        <a class="link" href="mailto: TJBachorz@gmail.com">Email</a>
+                    </div>
+            </section>
+        </div>
+        <section class="forms">
+            <div class="user-login-buttons">
+                <button class="create-user-button">Create New User</button>
+                <button class="login-button">Log-in</button>
+            </div>
+            <div class="create-user">
+                <form class="new-user-form hidden">
+                    <input type="text" name="username" placeholder="Username">
+                    <input type="text" name="email" placeholder="Email">
+                    <input type="password" name="password" placeholder="Password">
+                    <input type="submit" value="Create New User">
+                </form>
+                <form class="login-form hidden">
+                    <input type="text" name="username" placeholder="Username">
+                    <input type="password" name="password" placeholder="Password">
+                    <input type="submit" value="Log-in">
+                </form>
+            </div>
+        </section>
+        <div class="card-container">
+            
+        </div>
+    </main>
+    
+</body>
+</html>

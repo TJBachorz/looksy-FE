@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel='icon' href='../eye.png' type='image/x-icon'/>
+    <title>Looksy</title>
+    <script defer src="profile.js"></script>
+</head>
+<body>
+    <header>
+        <div class="title-card">
+            <h1 class="header"><a href="/">L👀ksy</a></h1>
+            <p class="welcome-user"></p>
+        </div>    
+        <div class="hamnav">
+            <div class="ham-menu">
+                <span id="bar1" class="bar"></span>
+                <span id="bar2" class="bar"></span>
+                <span id="bar3" class="bar"></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a class="home link" href="/">Home</a></li>
+                <li><a class="link">Community</a></li>
+                <li><a class="contact link" onclick="contactOverlay()">Contact</a></li>
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+    </header>
+    <main>
+        <div class="overlay-container">         
+            <section id="contact-overlay">
+                    <img id="contacts-x-icon" src="../X-icon.png" onclick="contactOverlay()">
+                    <h3>T. J. Bachorz</h3>
+                    <div id="contacts">
+                        <a class="link" href="https://github.com/TJBachorz">Github</a>
+                        <a class="link" href="https://www.linkedin.com/in/tjbachorz/">LinkedIn</a>
+                        <a class="link" href="mailto: TJBachorz@gmail.com">Email</a>
+                    </div>
+            </section>
+        </div> 
+        <div class="user-info">
+            <img id="avatar" alt="ProfilePic">
+            <form id="photo-upload-form" enctype="multipart/form-data">
+                <input id="upload" name="file" type="file">
+                <input type="submit" value="Upload">
+                <div id="message"></div>
+            </form>
+            <div class="user-bio">
+                <label for="bio">Bio:</label>
+                <p id="bio"></p>
+                <button class="edit-button">Edit Bio</button>
+            </div>
+            <div id="bio-form-div">
+                <!-- <form id="user-bio-form" class="user-bio-form hidden">
+                    <textarea class="bio-text-area" name="bio"></textarea>
+                    <input class="bio-save-button" type="submit" value="Save">
+                </form> -->
+            </div>
+            <!-- <img alt="future looksys"> -->
+        </div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono&family=Duru+Sans&display=swap");
+
+.header > a:visited, .header > a:hover, .header > a:link {
+    color: #312F2F;
+    text-decoration: none;
+}
+
+a, a:visited { color:gray; }
+
+.title-card {padding-left: 35px;}
+
+h1 { margin-bottom: 0px;}
+
+.user-login-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo-upload-form {
+    margin-bottom: 50px;
+}
+
+#bio {
+    font-size: 10px;
+}
+
+.create-user-button, .login-button {
+    border-radius: 15px;
+    background-color: #DCEDFF;
+    margin: 10px;
+    height:50px;
+    width:150px;
+}
+
+.create-user {
+    margin-top: 30px;
+}
+
+.new-user-form, .login-form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-user-form > input, .login-form > input {
+    margin: 10px;
+    height: 50px;
+    width: 250px;
+    border-radius: 15px;
+} 
+
+.title-card > p {
+    margin:auto;
+}
+
+/* START CONTACT OVERLAY */
+
+img#contacts-x-icon {
+    height: 30px;
+    width: 30px;
+}
+
+#contacts {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#contacts > a.link {
+    align-items: center;
+    color: #DCEDFF;
+}
+
+#contact-overlay > h3 {
+    margin-bottom: 20px;
+}
+
+#contact-overlay {
+    position:fixed;
+    height: 200px;
+    width: 300px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color: white; background: #2C8C99; opacity: .8;
+    border-radius: 20%;
+    z-index: 1000;
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+/* END CONTACT OVERLAY */
+
+/* START HAMBURGER SCRIPT */
+
+.ham-menu {
+    background-color: #2C8C99;
+    width: 35px;
+    height: 30px;
+    margin: 40px 60px 0 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #312F2F;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform:translateY(4px);
+}
+
+.animated .bar {
+    background-color:#DCEDFF;
+    ;
+}
+
+.animated #bar1 {
+    transform: translateY(4px) rotate(-45deg);
+}
+
+.animated #bar3 {
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.animated #bar2 {
+    opacity: 0;
+}
+
+.ham-menu.animated {
+    margin: 40px 60px 20px 65px;
+}
+
+.animated {
+    display: block;
+}
+
+.nav-links li a {
+    color: #DCEDFF;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.link {
+    text-align: right;
+    padding-right: 25px;
+}
+
+.nav-links li {
+    list-style: none;
+    text-align: right;
+    padding: 10px 0;
+}
+
+.nav-links li a:hover {
+    font-weight: bold;
+}
+
+.nav-links {
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+
+ul#nav-links.animated {
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height:0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #2C8C99, #2C8C99);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.hamnav {
+    z-index: 2;
+}
+
+.animated-bg {
+    width: 550px;
+    height: 540px;
+    transform: translate(60%, -30%);
+}
+
+.hamnav, .menu-bg {
+    top:0;
+    right: 0;
+    position: absolute;
+}
+/* END HAMBURGER SCRIPT */
+
+.hidden { display: none; }
+
+body {
+    background-color: #DCEDFF;
+    font-family: "Duru Sans", sans-serif;
+    color: #312F2F;
+    position: relative;
+}
+
+header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2C8C99;
+    font-weight: 500;
+    margin:0px auto;
+    left:0px;
+    right:0px;
+    height:80px;
+}
+
+#menu-bg.menu-bg.animated-bg {
+    opacity: 0.9;
+}
+
+h3 {
+    margin-bottom: 5px;
+    display: inline-flex
+}
+
+.favorite-button, .favorite-button.favorited {
+    float: right;
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: #DCEDFF;
+    margin-right: 5px;
+}
+
+button:focus { outline:none; }
+
+.favorite-button.favorited { color: red; }
+
+main {
+    margin-top:150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.credits {
+    font-size: 14px;
+    color: gray;
+    margin-top: 0px;
+}
+
+/* PROFILE PAGE */
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#avatar {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
