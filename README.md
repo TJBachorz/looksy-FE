@@ -44,5 +44,3 @@ Author : TJ Bachorz
 [Github](https://github.com/TJBachorz)
 [Linked-in](https://www.linkedin.com/in/tjbachorz/)
 [Email](tjbachorz@gmail.com)
-
-## License
