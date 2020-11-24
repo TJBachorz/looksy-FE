@@ -39,10 +39,12 @@ NOTE:  Because of the evolving nature of AR technology Looksy may not be optimiz
 
 ## Contact 
 
+Check out the backend [here](https://github.com/TJBachorz/looksy-BE)
+
+Check out the file-uploader [here](https://github.com/TJBachorz/looksy-file-uploader)
+
 Author : TJ Bachorz
 
 [Github](https://github.com/TJBachorz)
 [Linked-in](https://www.linkedin.com/in/tjbachorz/)
 [Email](tjbachorz@gmail.com)
-
-## License
