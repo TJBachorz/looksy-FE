@@ -55,7 +55,7 @@ function renderSaveButton() {
     return saveButton
 }
 
-function renderTextArea(user) {
+function renderTextArea() {
     const textArea = document.createElement('textarea')
     textArea.value = document.querySelector('#bio').textContent
     textArea.name = "bio"
@@ -122,7 +122,7 @@ function createMenu() {
     logoutLink.addEventListener('click', logout)
 }
 
-async function createWelcomeMessage(user) {
+function createWelcomeMessage(user) {
     const titleContainer = document.querySelector('.title-card')
     const welcome = document.querySelector('.welcome-user')
     welcome.textContent = `Welcome ${user.username}!`
@@ -150,7 +150,7 @@ function renderUpdatedImage(user) {
     img.alt = `${user.username}'s profile picture`
 }
 
-async function updateUserImage(data, user) {
+function updateUserImage(data, user) {
     return fetch(`${$.baseURL}/users/${user.id}`, {
         method: "PATCH",
         headers: {

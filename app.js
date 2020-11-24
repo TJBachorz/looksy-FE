@@ -45,7 +45,7 @@ function createUserLogin(event) {
     loginUser(username, password)
 }
 
-async function logUserData(data) {
+function logUserData(data) {
     let {user, token} = data
     localStorage.setItem('token', token)
     localStorage.setItem('id', user.id)
@@ -67,7 +67,7 @@ async function loginUser(username, password) {
     userSetup()
 }
 
-async function createWelcomeMessage(user) {
+function createWelcomeMessage(user) {
     const titleContainer = document.querySelector('.title-card')
     const welcome = document.querySelector('.welcome-user')
     welcome.textContent = `Welcome ${user.username}!`
@@ -204,11 +204,11 @@ function createFavorite(event) {
         .then(favorite => setFavoriteId(favorite, event))
 }
 
-async function setFavoriteId(favorite, event) {
+function setFavoriteId(favorite, event) {
     event.target.dataset.favId = favorite.id
 }
 
-async function fetchCallFavorites(url, method, bodyData=null) {
+function fetchCallFavorites(url, method, bodyData=null) {
     const headers = {
         "Accept": "application/json",
         "Content-Type": "application/json",
@@ -225,8 +225,6 @@ function renderFavoriteButton(model) {
     favoriteButton.dataset.modelId = model.id
     return favoriteButton
 }
-
-// "&hearts;"
 
 function renderModelName(model) {
     const name = document.createElement('h3')
@@ -255,10 +253,6 @@ function generateModelCard() {
     return modelCard
 }
 
-function logout() {
-    localStorage.clear()
-}
+function logout() { localStorage.clear() }
 
-function parseResponse(response) {
-    return response.json()
-}
+function parseResponse(response) { return response.json() }
