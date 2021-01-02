@@ -2,6 +2,10 @@
 
 >An interior decorating AR experience
 
+Check out the backend [here](https://github.com/TJBachorz/looksy-BE)
+
+Check out the file-uploader [here](https://github.com/TJBachorz/looksy-file-uploader)
+
 ## Table of Contents
 * [Video Demo](#intro-video)
 * [About](#about)
@@ -38,9 +42,5 @@ NOTE:  Because of the evolving nature of AR technology Looksy may not be optimiz
 * Google Model-Viewer AR package
 
 ## Contact 
-
-Check out the backend [here](https://github.com/TJBachorz/looksy-BE)
-
-Check out the file-uploader [here](https://github.com/TJBachorz/looksy-file-uploader)
 
 [<img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-512.png" width="40" height="40"/>](https://github.com/TJBachorz) &nbsp; [<img src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_14-linkedin-512.png" width="40" height="40"/>](https://www.linkedin.com/in/tjbachorz/) &nbsp; [<img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/medium-512.png" width="40" height="40"/>](https://tjbachorz.medium.com/)
